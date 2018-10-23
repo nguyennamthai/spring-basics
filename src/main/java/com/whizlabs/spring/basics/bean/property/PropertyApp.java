@@ -1,6 +1,7 @@
 package com.whizlabs.spring.basics.bean.property;
 
 import com.whizlabs.spring.basics.bean.property.data.PropertyContainer;
+import com.whizlabs.spring.basics.bean.property.data.PropertyValue;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.GenericApplicationContext;
@@ -20,5 +21,7 @@ public class PropertyApp {
         ApplicationContext configApplicationContext = new AnnotationConfigApplicationContext(PropertyConfig.class);
         PropertyContainer propertyContainer = configApplicationContext.getBean(PropertyContainer.class);
         System.out.println(propertyContainer.getProperty());
+        PropertyValue propertyValue = configApplicationContext.getBean(PropertyValue.class);
+        System.out.println(propertyValue.getProperty());
     }
 }
