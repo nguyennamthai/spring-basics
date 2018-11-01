@@ -11,8 +11,9 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <spring.version>5.1.0.RELEASE</spring.version>
+        <spring.version>5.1.2.RELEASE</spring.version>
         <javaee.version>7.0</javaee.version>
+        <aspectj.version>1.9.2</aspectj.version>
     </properties>
 
     <dependencies>
@@ -25,6 +26,11 @@
             <groupId>javax</groupId>
             <artifactId>javaee-api</artifactId>
             <version>${javaee.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectj.version}</version>
         </dependency>
     </dependencies>
 </project>
