@@ -1,11 +1,11 @@
 This is the source code for the Whizlabs Spring Basics course.
 
-Section 1: **Setting up Environment**
-1. Build Tool
-2. Dependencies
+Section 1: **Getting Started**
+1. Course Overview
+2. Development Environment & Spring Dependencies
 
 Section 2: **Inversion of Control**
-1. Intro to IoC and Beans
+1. Introduction to IoC and Beans
 2. IoC Containers
 3. Spring Beans
 4. Configuration and Dependency Injection
