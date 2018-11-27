@@ -1,4 +1,4 @@
-package com.whizlabs.spring.basics.ioc.data;
+package com.whizlabs.spring.basics.ioc.configuration;
 
 public class Name {
     private String firstName;
@@ -9,7 +9,11 @@ public class Name {
         this.lastName = lastName;
     }
 
-    public String toString() {
-        return firstName + " " + lastName;
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
     }
 }
