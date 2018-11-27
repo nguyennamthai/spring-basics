@@ -1,4 +1,4 @@
-package com.whizlabs.spring.basics.ioc.config;
+package com.whizlabs.spring.basics.ioc.configuration;
 
 import com.whizlabs.spring.basics.ioc.data.Address;
 import com.whizlabs.spring.basics.ioc.data.Name;

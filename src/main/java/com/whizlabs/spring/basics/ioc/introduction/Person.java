@@ -1,4 +1,4 @@
-package com.whizlabs.spring.basics.ioc.intro;
+package com.whizlabs.spring.basics.ioc.introduction;
 
 public class Person {
     private String fullName;

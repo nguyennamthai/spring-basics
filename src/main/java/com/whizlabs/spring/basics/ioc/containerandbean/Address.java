@@ -1,4 +1,4 @@
-package com.whizlabs.spring.basics.ioc.bean;
+package com.whizlabs.spring.basics.ioc.containerandbean;
 
 public class Address {
     private int number;

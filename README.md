@@ -8,7 +8,7 @@ Section 2: **Inversion of Control**
 1. Introduction to IoC and Beans
 2. IoC Containers & Beans - Part I
 3. IoC Containers & Beans - Part II
-4. Configuration & Dependency Injection
+4. The @Configuration Annotation
 5. Component Scanning
 
 Section 3: **Bean Management**

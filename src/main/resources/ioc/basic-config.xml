@@ -4,12 +4,12 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="address" class="com.whizlabs.spring.basics.ioc.bean.Address">
+    <bean id="address" class="com.whizlabs.spring.basics.ioc.containerandbean.Address">
         <constructor-arg index="0" value="100"/>
         <constructor-arg index="1" value="High Street"/>
     </bean>
 
-    <bean id="person" class="com.whizlabs.spring.basics.ioc.bean.Person">
+    <bean id="person" class="com.whizlabs.spring.basics.ioc.containerandbean.Person">
         <property name="fullName" value="John Doe"/>
         <property name="address" ref="address"/>
     </bean>

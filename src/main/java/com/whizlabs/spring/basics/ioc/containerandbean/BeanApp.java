@@ -1,4 +1,4 @@
-package com.whizlabs.spring.basics.ioc.bean;
+package com.whizlabs.spring.basics.ioc.containerandbean;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
