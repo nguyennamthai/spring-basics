@@ -7,9 +7,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class ScanningApp {
     public static void main(String[] args) {
         ApplicationContext context = new AnnotationConfigApplicationContext(ScanningConfig.class);
-        Person person1 = context.getBean("person", Person.class);
-        person1.setName("Jane Roe");
+        Person person1 = (Person) context.getBean("person");
+        person1.setFullName("John Doe");
         Person person2 = context.getBean(Person.class);
-        System.out.println(person2.getName());
+        System.out.println(person2.getFullName());
     }
 }

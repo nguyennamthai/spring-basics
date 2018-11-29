@@ -12,7 +12,7 @@ Section 2: **Inversion of Control**
 5. Component Scanning
 
 Section 3: **Bean Management**
-1. Auto-Wiring
+1. Dependency Injection & Auto-Wiring
 2. Dependency Injection Variants
 3. @Autowired Fine-Tuning
 4. Bean Scopes
