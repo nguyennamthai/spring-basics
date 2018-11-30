@@ -1,4 +1,4 @@
-package com.whizlabs.spring.basics.bean.autowiring.data;
+package com.whizlabs.spring.basics.bean.awform.data;
 
 import org.springframework.stereotype.Component;
 

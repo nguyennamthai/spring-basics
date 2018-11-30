@@ -13,7 +13,7 @@ Section 2: **Inversion of Control**
 
 Section 3: **Bean Management**
 1. Dependency Injection & Auto-Wiring
-2. Dependency Injection Variants
+2. Auto-Wiring Forms
 3. @Autowired Fine-Tuning
 4. Bean Scopes
 5. Lifecycle Callbacks

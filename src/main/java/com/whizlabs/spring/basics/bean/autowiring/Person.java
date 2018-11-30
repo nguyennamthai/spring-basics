@@ -1,12 +1,12 @@
-package com.whizlabs.spring.basics.bean.autowiring.data;
+package com.whizlabs.spring.basics.bean.autowiring;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.core.env.Environment;
 
-@Component
 public class Person {
     private Name name;
     private Address address;
+    private int age;
 
     public Person(Name name) {
         this.name = name;
@@ -21,7 +21,16 @@ public class Person {
     }
 
     @Autowired
-    public void arbitraryName(Address address) {
+    public void setSomething(Address address) {
         this.address = address;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    @Autowired
+    public void setAge(Environment environment) {
+        this.age = environment.getProperty("age", Integer.class, 0);
     }
 }

@@ -1,18 +1,24 @@
 package com.whizlabs.spring.basics.bean.autowiring;
 
-import com.whizlabs.spring.basics.bean.autowiring.data.Company;
-import com.whizlabs.spring.basics.bean.autowiring.data.Person;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
-@ComponentScan
-@PropertySource("bean/company.properties")
+@Configuration
+@PropertySource("bean/person.properties")
 public class AutowiringConfig {
     @Bean
-    public Company getCompany(Person person) {
-        Company company = new Company();
-        company.setCeo(person);
-        return company;
+    public Name getName() {
+        return new Name("Rod", "Johnson");
+    }
+
+    @Bean
+    public Address getAddress() {
+        return new Address(100, "High Street");
+    }
+
+    @Bean
+    public Person getPerson() {
+        return new Person(getName());
     }
 }

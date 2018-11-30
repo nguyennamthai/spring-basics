@@ -1,7 +1,5 @@
 package com.whizlabs.spring.basics.bean.autowiring;
 
-import com.whizlabs.spring.basics.bean.autowiring.data.Company;
-import com.whizlabs.spring.basics.bean.autowiring.data.Person;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -11,9 +9,6 @@ public class AutowiringApp {
         Person person = context.getBean(Person.class);
         System.out.println(person.getName());
         System.out.println(person.getAddress());
-
-        Company company = context.getBean(Company.class);
-        System.out.println(company.getCeo() == person);
-        System.out.println(company.getRevenue());
+        System.out.println(person.getAge());
     }
 }

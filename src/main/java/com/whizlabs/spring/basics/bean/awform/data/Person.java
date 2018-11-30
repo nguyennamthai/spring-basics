@@ -1,4 +1,4 @@
-package com.whizlabs.spring.basics.bean.divariant.data;
+package com.whizlabs.spring.basics.bean.awform.data;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
