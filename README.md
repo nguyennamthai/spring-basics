@@ -12,14 +12,15 @@ Section 2: **Inversion of Control**
 5. Component Scanning
 
 Section 3: **Bean Management**
-1. Dependency Injection & Auto-Wiring
-2. Auto-Wiring Forms
-3. @Autowired Fine-Tuning
-4. Bean Scopes
-5. Lifecycle Callbacks
-6. @Resource, @Inject and @Named
-7. Profiles
-8. Property Sources
+1. Dependency Injection & Autowiring
+2. Dependency Injection Types - Part I
+3. Dependency Injection Types - Part II
+4. Autowiring Fine-Tuning
+5. Bean Scopes
+6. Lifecycle Callbacks
+7. @Resource, @Inject and @Named
+8. Profiles
+9. Property Sources
 
 Section 4: **Resources**
 1. Loading Resources

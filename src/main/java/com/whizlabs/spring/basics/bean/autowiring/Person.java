@@ -21,7 +21,7 @@ public class Person {
     }
 
     @Autowired
-    public void setSomething(Address address) {
+    public void setAddress(Address address) {
         this.address = address;
     }
 
