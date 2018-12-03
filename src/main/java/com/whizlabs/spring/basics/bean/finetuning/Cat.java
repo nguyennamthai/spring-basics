@@ -1,10 +1,10 @@
-package com.whizlabs.spring.basics.bean.finetuning.data;
+package com.whizlabs.spring.basics.bean.finetuning;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
-@Qualifier("cat")
+@Qualifier("catBean")
 public class Cat implements Animal {
     @Override
     public String move() {
@@ -13,6 +13,6 @@ public class Cat implements Animal {
 
     @Override
     public String toString() {
-        return move();
+        return getClass().getSimpleName();
     }
 }

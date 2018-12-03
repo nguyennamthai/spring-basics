@@ -1,17 +1,18 @@
-package com.whizlabs.spring.basics.bean.finetuning.data;
+package com.whizlabs.spring.basics.bean.finetuning;
 
-import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
-@Qualifier("bird")
+@Primary
 public class Bird implements Animal {
+    @Override
     public String move() {
         return "Fly";
     }
 
     @Override
     public String toString() {
-        return move();
+        return getClass().getSimpleName();
     }
 }
