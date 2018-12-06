@@ -1,7 +1,5 @@
 package com.whizlabs.spring.basics.bean.property;
 
-import com.whizlabs.spring.basics.bean.property.data.PropertyContainer;
-import com.whizlabs.spring.basics.bean.property.data.PropertyValue;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.GenericApplicationContext;

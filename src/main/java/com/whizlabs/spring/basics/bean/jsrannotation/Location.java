@@ -1,4 +1,4 @@
-package com.whizlabs.spring.basics.bean.jsrannotation.data;
+package com.whizlabs.spring.basics.bean.jsrannotation;
 
 public class Location {
     private String address;

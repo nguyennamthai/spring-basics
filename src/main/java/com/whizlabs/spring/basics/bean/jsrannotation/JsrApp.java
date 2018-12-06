@@ -1,7 +1,5 @@
 package com.whizlabs.spring.basics.bean.jsrannotation;
 
-import com.whizlabs.spring.basics.bean.jsrannotation.data.Location;
-import com.whizlabs.spring.basics.bean.jsrannotation.data.Person;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

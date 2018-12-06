@@ -1,4 +1,4 @@
-package com.whizlabs.spring.basics.bean.property.data;
+package com.whizlabs.spring.basics.bean.property;
 
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;

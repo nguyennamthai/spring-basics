@@ -1,4 +1,4 @@
-package com.whizlabs.spring.basics.bean.jsrannotation.data;
+package com.whizlabs.spring.basics.bean.jsrannotation;
 
 import javax.annotation.ManagedBean;
 import javax.annotation.Resource;

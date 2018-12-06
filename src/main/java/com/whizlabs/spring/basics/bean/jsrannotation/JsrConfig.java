@@ -1,8 +1,5 @@
 package com.whizlabs.spring.basics.bean.jsrannotation;
 
-import com.whizlabs.spring.basics.bean.jsrannotation.data.Identity;
-import com.whizlabs.spring.basics.bean.jsrannotation.data.Location;
-import com.whizlabs.spring.basics.bean.jsrannotation.data.Occupation;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Scope;
