@@ -1,7 +1,5 @@
 package com.whizlabs.spring.basics.bean.scope;
 
-import com.whizlabs.spring.basics.bean.scope.data.Address;
-import com.whizlabs.spring.basics.bean.scope.data.Person;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

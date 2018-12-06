@@ -1,4 +1,4 @@
-package com.whizlabs.spring.basics.bean.scope.data;
+package com.whizlabs.spring.basics.bean.scope;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
