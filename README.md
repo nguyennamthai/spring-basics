@@ -18,7 +18,7 @@ Section 3: **Bean Management**
 4. Autowiring Fine-Tuning
 5. Bean Scopes
 6. Lifecycle Callbacks
-7. @Resource, @Inject and @Named
+7. Java EE Annotations for Dependency Injection
 8. Profiles
 9. Property Sources
 

@@ -1,4 +1,4 @@
-package com.whizlabs.spring.basics.bean.jsrannotation;
+package com.whizlabs.spring.basics.bean.jeeannotation;
 
 public class Identity {
     private String fullName;

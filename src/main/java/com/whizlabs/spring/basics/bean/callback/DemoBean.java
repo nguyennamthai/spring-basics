@@ -7,29 +7,31 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 public class DemoBean implements InitializingBean, DisposableBean {
-    public void beanInit() {
-        System.out.println("initMethod specified in @Bean");
-    }
-
+    @Override
     public void afterPropertiesSet() {
-        System.out.println( "afterPropertiesSet method of InitializingBean");
+        System.out.println("afterPropertiesSet method of InitializingBean");
     }
 
-    @PostConstruct
-    public void postConstruct() {
-        System.out.println("method annotated with @PostConstruct");
-    }
-
-    public void beanDestroy() {
-        System.out.println("destroyMethod specified in @Bean");
-    }
-
+    @Override
     public void destroy() {
         System.out.println("destroy method of DisposableBean");
     }
 
+    @PostConstruct
+    private void postConstruct() {
+        System.out.println("method annotated with @PostConstruct");
+    }
+
     @PreDestroy
-    public void preDestroy() {
+    private void preDestroy() {
         System.out.println("method annotated with @PreDestroy");
+    }
+
+    private void beanInit() {
+        System.out.println("initMethod specified in @Bean");
+    }
+
+    private void beanDestroy() {
+        System.out.println("destroyMethod specified in @Bean");
     }
 }

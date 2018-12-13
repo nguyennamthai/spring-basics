@@ -1,13 +1,13 @@
-package com.whizlabs.spring.basics.bean.jsrannotation;
+package com.whizlabs.spring.basics.bean.jeeannotation;
 
 public class Location {
     private String address;
 
-    public String getAddress() {
-        return address;
-    }
-
     public Location(String address) {
         this.address = address;
+    }
+
+    public String getAddress() {
+        return address;
     }
 }

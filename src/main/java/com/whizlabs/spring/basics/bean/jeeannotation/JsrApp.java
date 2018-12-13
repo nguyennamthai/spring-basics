@@ -1,4 +1,4 @@
-package com.whizlabs.spring.basics.bean.jsrannotation;
+package com.whizlabs.spring.basics.bean.jeeannotation;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -8,8 +8,6 @@ public class JsrApp {
         ApplicationContext context = new AnnotationConfigApplicationContext(JsrConfig.class);
         Person person = context.getBean(Person.class);
         System.out.println(person.getIdentity().getFullName());
-        Location location1 = person.getLocationProvider().get();
-        Location location2 = person.getLocationProvider().get();
-        System.out.println(location1 == location2);
+        System.out.println(person.getLocation().getAddress());
     }
 }
