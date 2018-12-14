@@ -6,14 +6,9 @@ import org.springframework.context.annotation.Profile;
 
 @ComponentScan
 public class ProfileConfig {
-    @Bean("beanA")
-    public BeanA getBeanA() {
-        return new BeanA();
-    }
-
-    @Bean("beanB")
-    @Profile("dev")
-    public BeanB getBeanB() {
-        return new BeanB();
+    @Bean
+    @Profile("default")
+    public DefaultBean defaultBean() {
+        return new DefaultBean();
     }
 }
