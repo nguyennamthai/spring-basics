@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class PropertyBean {
     private Environment environment;
-    private String provider;
+    private int publishedYear;
 
     public PropertyBean(Environment environment) {
         this.environment = environment;
@@ -17,12 +17,12 @@ public class PropertyBean {
         return environment.getProperty("course");
     }
 
-    public String getProvider() {
-        return provider;
+    public int getPublishedYear() {
+        return publishedYear;
     }
 
-    @Value("${provider}")
-    public void setProvider(String provider) {
-        this.provider = provider;
+    @Value("${publishedYear}")
+    public void setPublishedYear(int publishedYear) {
+        this.publishedYear = publishedYear;
     }
 }

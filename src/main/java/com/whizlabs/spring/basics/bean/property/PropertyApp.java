@@ -8,6 +8,6 @@ public class PropertyApp {
         ApplicationContext context = new AnnotationConfigApplicationContext(PropertyConfig.class);
         PropertyBean propertyBean = context.getBean(PropertyBean.class);
         System.out.println(propertyBean.getCourse());
-        System.out.println(propertyBean.getProvider());
+        System.out.println(propertyBean.getPublishedYear());
     }
 }
