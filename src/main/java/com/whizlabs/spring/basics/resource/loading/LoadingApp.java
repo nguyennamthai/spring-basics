@@ -9,7 +9,7 @@ public class LoadingApp {
     public static void main(String[] args) throws IOException {
         ApplicationContext context = new AnnotationConfigApplicationContext(LoadingConfig.class);
         Whizlabs whizlabs = context.getBean(Whizlabs.class);
-        whizlabs.getResourceFromClassPath();
-        whizlabs.getResourceFromFileSystem();
+        whizlabs.loadResourceFromClassPath();
+        whizlabs.loadResourceFromFileSystem();
     }
 }

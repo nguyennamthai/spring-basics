@@ -4,6 +4,7 @@ import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Component;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 
@@ -15,13 +16,15 @@ public class Whizlabs {
         this.resourceLoader = resourceLoader;
     }
 
-    public void getResourceFromClassPath() throws IOException {
+    public void loadResourceFromClassPath() throws IOException {
         Resource resource = resourceLoader.getResource("classpath:resource/mission.txt");
-        Files.lines(resource.getFile().toPath()).forEach(System.out::println);
+        File file = resource.getFile();
+        Files.lines(file.toPath()).forEach(System.out::println);
     }
 
-    public void getResourceFromFileSystem() throws IOException {
+    public void loadResourceFromFileSystem() throws IOException {
         Resource resource = resourceLoader.getResource("file:resource/mission.txt");
-        Files.lines(resource.getFile().toPath()).forEach(System.out::println);
+        File file = resource.getFile();
+        Files.lines(file.toPath()).forEach(System.out::println);
     }
 }

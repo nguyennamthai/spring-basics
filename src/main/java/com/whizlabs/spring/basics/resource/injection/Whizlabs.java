@@ -5,22 +5,23 @@ import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Scanner;
 
 @Component
 public class Whizlabs {
     private Resource resource;
 
-    public Whizlabs(@Value("https://www.whizlabs.com/about-us") Resource resource) {
+    public Whizlabs(@Value("resource/mission.txt") Resource resource) {
         this.resource = resource;
     }
 
     public void printResourceContent() throws IOException {
-        Scanner scanner = new Scanner(resource.getInputStream());
+        InputStream inputStream = resource.getInputStream();
+        Scanner scanner = new Scanner(inputStream);
         while (scanner.hasNext()) {
-            if (scanner.nextLine().equals("<h2>OUR MISSION</h2>")) {
-                System.out.println(scanner.nextLine());
-            }
+            String line = scanner.nextLine();
+            System.out.println(line);
         }
         scanner.close();
     }
