@@ -1,6 +1,5 @@
-package com.whizlabs.spring.basics.spel.useinbean;
+package com.whizlabs.spring.basics.spel.beanspel;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -13,8 +12,8 @@ public class Person {
         return fullName;
     }
 
-    @Autowired
-    public void setFullName(@Value("#{'${firstName}' + ' ' + '${lastName}'}") String fullName) {
+    @Value("#{'${firstName}' + ' ' + '${lastName}'}")
+    public void setFullName(String fullName) {
         this.fullName = fullName;
     }
 
@@ -22,7 +21,6 @@ public class Person {
         return age;
     }
 
-    @Autowired
     @Value("#{T(java.time.Year).now().value - T(Integer).parseInt('${yearOfBirth}')}")
     public void setAge(int age) {
         this.age = age;
