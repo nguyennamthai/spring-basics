@@ -1,4 +1,4 @@
-package com.whizlabs.spring.basics.spel.evaluation.data;
+package com.whizlabs.spring.basics.spel.evaluation;
 
 public class Company {
     private String name;

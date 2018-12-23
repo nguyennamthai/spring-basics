@@ -1,6 +1,5 @@
 package com.whizlabs.spring.basics.spel.useinbean;
 
-import com.whizlabs.spring.basics.spel.useinbean.data.Person;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

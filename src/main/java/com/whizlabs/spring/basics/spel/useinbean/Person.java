@@ -1,4 +1,4 @@
-package com.whizlabs.spring.basics.spel.useinbean.data;
+package com.whizlabs.spring.basics.spel.useinbean;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
