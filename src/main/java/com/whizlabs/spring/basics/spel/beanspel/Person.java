@@ -12,7 +12,7 @@ public class Person {
         return fullName;
     }
 
-    @Value("#{'${firstName}' + ' ' + '${lastName}'}")
+    @Value("#{'${first-name}' + ' ' + '${last-name}'}")
     public void setFullName(String fullName) {
         this.fullName = fullName;
     }
@@ -21,7 +21,7 @@ public class Person {
         return age;
     }
 
-    @Value("#{T(java.time.Year).now().value - T(Integer).parseInt('${yearOfBirth}')}")
+    @Value("#{T(java.time.Year).now().value - T(Integer).parseInt('${year-of-birth}')}")
     public void setAge(int age) {
         this.age = age;
     }

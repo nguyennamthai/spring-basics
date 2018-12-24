@@ -21,7 +21,7 @@ public class PropertyBean {
         return publishedYear;
     }
 
-    @Value("${publishedYear}")
+    @Value("${published-year}")
     public void setPublishedYear(int publishedYear) {
         this.publishedYear = publishedYear;
     }

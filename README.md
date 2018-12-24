@@ -28,7 +28,7 @@ Section 4: **Resources**
 
 Section 5: **Spring Expression Language**
 1. Expression Evaluation
-2. Using Expressions in Beans
+2. SpEL in Bean Definitions
 
 Section 6: **Aspect Oriented Programming**
 1. AOP Concepts
