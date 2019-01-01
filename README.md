@@ -32,9 +32,10 @@ Section 5: **Spring Expression Language**
 
 Section 6: **Aspect Oriented Programming**
 1. AOP Concepts
-2. Pointcuts
-3. Before and After Advices
-4. After Returning Advices
-5. After Throwing Advices
-6. Around Advices
-7. Advice Parameters
+2. @AspectJ Support
+3. Pointcuts
+4. Before and After Advices
+5. After Returning Advices
+6. After Throwing Advices
+7. Around Advices
+8. Advice Parameters

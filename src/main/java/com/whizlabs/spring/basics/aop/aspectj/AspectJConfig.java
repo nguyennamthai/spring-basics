@@ -1,15 +1,14 @@
-package com.whizlabs.spring.basics.aop.concept;
+package com.whizlabs.spring.basics.aop.aspectj;
 
-import com.whizlabs.spring.basics.aop.concept.data.Person;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @ComponentScan
 @EnableAspectJAutoProxy
-public class ConceptConfig {
+public class AspectJConfig {
     @Bean
     public Person getPerson() {
-        return new Person("John", "Doe");
+        return new Person("John Doe");
     }
 }
