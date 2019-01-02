@@ -32,7 +32,7 @@ Section 5: **Spring Expression Language**
 
 Section 6: **Aspect Oriented Programming**
 1. AOP Concepts
-2. @AspectJ Support
+2. AspectJ Support
 3. Pointcuts
 4. Before and After Advices
 5. After Returning Advices

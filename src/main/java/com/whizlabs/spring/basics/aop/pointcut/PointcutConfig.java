@@ -10,6 +10,6 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 public class PointcutConfig {
     @Bean
     public Person getPerson() {
-        return new Person("John", "Doe");
+        return new Person("John Doe");
     }
 }
