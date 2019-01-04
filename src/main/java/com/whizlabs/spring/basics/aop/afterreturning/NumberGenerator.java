@@ -6,7 +6,7 @@ import java.util.Random;
 
 @Component
 public class NumberGenerator {
-    public int generate() {
+    public Object generate() {
         return new Random().nextInt(100);
     }
 }
