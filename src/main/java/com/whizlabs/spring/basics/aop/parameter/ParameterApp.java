@@ -7,6 +7,7 @@ public class ParameterApp {
     public static void main(String[] args) {
         ApplicationContext context = new AnnotationConfigApplicationContext(ParameterConfig.class);
         Calculator calculator = context.getBean(Calculator.class);
-        System.out.printf("The result is %s", calculator.multiply(-2, 3));
+        int product = calculator.multiply(-2);
+        System.out.printf("The result is %s", product);
     }
 }

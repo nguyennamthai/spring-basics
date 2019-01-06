@@ -9,19 +9,16 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 public class ParameterAspect {
-    @Pointcut("execution(* com.whizlabs.spring.basics.aop.parameter.Calculator.multiply(int, int, ..))")
+    @Pointcut("execution(* com.whizlabs.spring.basics.aop.parameter.Calculator.multiply(int))")
     private void multiplyPointcut() { }
 
-    @Around("multiplyPointcut() && args(arg1, arg2, ..)")
-    private int preHandle(ProceedingJoinPoint joinPoint, int arg1, int arg2) throws Throwable {
-        System.out.println("Pre-handing arguments ...");
-        if (arg1 < 0) {
-            arg1 = -arg1;
+    @Around(value = "multiplyPointcut() && args(arg) && target(cal)", argNames = "joinPoint,arg,cal")
+    private int preHandle(ProceedingJoinPoint joinPoint, int arg, Calculator cal) throws Throwable {
+        System.out.println("Pre-handing arguments for calculator with the factor of " + cal.getFactor());
+        if (arg < 0) {
+            arg = -arg;
         }
-        if (arg2 < 0) {
-            arg2 = -arg2;
-        }
-        Object result = joinPoint.proceed(new Object[]{arg1, arg2});
+        Object result = joinPoint.proceed(new Object[]{arg});
         System.out.println("Calculation completed");
         return (int) result;
     }

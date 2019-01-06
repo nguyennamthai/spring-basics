@@ -4,7 +4,13 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Calculator {
-    public int multiply(int number1, int number2) {
-        return number1 * number2;
+    private final int factor = 5;
+
+    public int getFactor() {
+        return factor;
+    }
+
+    public int multiply(int number) {
+        return factor * number;
     }
 }
