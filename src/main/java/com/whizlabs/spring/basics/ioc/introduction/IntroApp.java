@@ -5,7 +5,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class IntroApp {
     public static void main(String[] args) {
-        Person john = new Person ("John Doe");
+        Person john = new Person("John Doe");
         System.out.println(john.getFullName());
 
         ApplicationContext context = new AnnotationConfigApplicationContext(IntroConfig.class);

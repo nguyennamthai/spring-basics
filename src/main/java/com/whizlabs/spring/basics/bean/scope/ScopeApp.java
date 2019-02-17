@@ -9,6 +9,7 @@ public class ScopeApp {
         Person person1 = context.getBean(Person.class);
         Person person2 = context.getBean(Person.class);
         System.out.println(person1 == person2);
+
         Address address1 = person1.getAddress();
         Address address2 = person2.getAddress();
         System.out.println(address1 == address2);

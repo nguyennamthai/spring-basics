@@ -4,7 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
 @ComponentScan
-public class JsrConfig {
+public class JeeConfig {
     @Bean
     public Identity getIdentity() {
         return new Identity("John Doe");
@@ -12,6 +12,6 @@ public class JsrConfig {
 
     @Bean
     public Location getLocation() {
-        return new Location("White House");
+        return new Location("High Street");
     }
 }

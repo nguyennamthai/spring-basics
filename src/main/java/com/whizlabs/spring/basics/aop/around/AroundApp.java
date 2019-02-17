@@ -6,8 +6,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class AroundApp {
     public static void main(String[] args) {
         ApplicationContext context = new AnnotationConfigApplicationContext(AroundConfig.class);
-        NumberGenerator numberGenerator = context.getBean(NumberGenerator.class);
-        int generatedNumber = numberGenerator.generate();
+        NumberGenerator generator = context.getBean(NumberGenerator.class);
+        int generatedNumber = generator.generate();
         System.out.println("Generated number: " + generatedNumber);
     }
 }

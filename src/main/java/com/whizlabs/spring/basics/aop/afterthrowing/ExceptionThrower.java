@@ -5,6 +5,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class ExceptionThrower {
     public void throwException() {
-        throw new RuntimeException("Test exception");
+        throw new RuntimeException("AfterThrowing demo");
     }
 }

@@ -13,7 +13,7 @@ public class AroundAspect {
         long start = System.nanoTime();
         Object result = joinPoint.proceed();
         long end = System.nanoTime();
-        System.out.printf("Execution time: %.2f milliseconds%n", (end - start) / 10E6);
+        System.out.printf("Execution time: %.2f milli-seconds%n", (end - start) / 10E6);
         return (int) result;
     }
 }

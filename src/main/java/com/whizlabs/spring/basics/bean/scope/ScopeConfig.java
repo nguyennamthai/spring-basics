@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Scope;
 public class ScopeConfig {
     @Bean
     @Scope("singleton")
-    public Address getAddress(){
+    public Address getAddress() {
         return new Address("High Street");
     }
 }

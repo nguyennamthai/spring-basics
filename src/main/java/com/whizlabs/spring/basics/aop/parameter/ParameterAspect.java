@@ -14,7 +14,7 @@ public class ParameterAspect {
 
     @Around(value = "multiplyPointcut() && args(arg) && target(cal)", argNames = "joinPoint,arg,cal")
     private int preHandle(ProceedingJoinPoint joinPoint, int arg, Calculator cal) throws Throwable {
-        System.out.println("Pre-handing arguments for calculator with the factor of " + cal.getFactor());
+        System.out.println("Pre-handing argument with the factor of " + cal.getFactor());
         if (arg < 0) {
             arg = -arg;
         }

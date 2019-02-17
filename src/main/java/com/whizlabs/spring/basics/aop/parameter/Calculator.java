@@ -11,6 +11,6 @@ public class Calculator {
     }
 
     public int multiply(int number) {
-        return factor * number;
+        return number * factor;
     }
 }

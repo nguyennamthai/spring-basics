@@ -4,7 +4,7 @@ import org.springframework.context.annotation.Bean;
 
 public class CallbackConfig {
     @Bean(initMethod = "beanInit", destroyMethod = "beanDestroy")
-    public DemoBean getPerson() {
+    public DemoBean demoBean() {
         return new DemoBean();
     }
 }

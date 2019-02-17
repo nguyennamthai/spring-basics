@@ -12,7 +12,7 @@ public class DITypeConfig {
 
     @Bean
     public Address getAddress() {
-        return new Address("Pennsylvania Avenue");
+        return new Address("High Street");
     }
 
     @Bean
