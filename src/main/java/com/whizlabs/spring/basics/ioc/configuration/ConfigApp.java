@@ -5,14 +5,14 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class ConfigApp {
     public static void main(String[] args) {
-        ApplicationContext contextWithLiteMode = new AnnotationConfigApplicationContext(BeanLiteModeConfig.class);
-        Name nameWithLiteMode = contextWithLiteMode.getBean(Name.class);
-        Person personWithLiteMode = contextWithLiteMode.getBean(Person.class);
-        System.out.println(nameWithLiteMode == personWithLiteMode.getName());
+        ApplicationContext contextWithLiteModeConfig = new AnnotationConfigApplicationContext(BeanLiteModeConfig.class);
+        Name nameWithLiteModeConfig = contextWithLiteModeConfig.getBean(Name.class);
+        Person personWithLiteModeConfig = contextWithLiteModeConfig.getBean(Person.class);
+        System.out.println(nameWithLiteModeConfig == personWithLiteModeConfig.getName());
 
-        ApplicationContext contextWithFullMode = new AnnotationConfigApplicationContext(BeanFullModeConfig.class);
-        Name nameWithFullMode = contextWithFullMode.getBean(Name.class);
-        Person personWithFullMode = contextWithFullMode.getBean(Person.class);
-        System.out.println(nameWithFullMode == personWithFullMode.getName());
+        ApplicationContext contextWithFullModeConfig = new AnnotationConfigApplicationContext(BeanFullModeConfig.class);
+        Name nameWithFullModeConfig = contextWithFullModeConfig.getBean(Name.class);
+        Person personWithFullModeConfig = contextWithFullModeConfig.getBean(Person.class);
+        System.out.println(nameWithFullModeConfig == personWithFullModeConfig.getName());
     }
 }

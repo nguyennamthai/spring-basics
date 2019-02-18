@@ -19,7 +19,6 @@ public class Person {
         this.identity = identity;
     }
 
-
     public Location getLocation() {
         return location;
     }

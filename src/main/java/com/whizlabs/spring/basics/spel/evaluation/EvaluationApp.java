@@ -8,7 +8,7 @@ public class EvaluationApp {
     public static void main(String[] args) {
         ExpressionParser parser = new SpelExpressionParser();
 
-        Expression simpleExpression = parser.parseExpression("'Hello World'");
+        Expression simpleExpression = parser.parseExpression("'Hello World!'");
         Object simpleResult = simpleExpression.getValue();
         System.out.println(simpleResult);
 

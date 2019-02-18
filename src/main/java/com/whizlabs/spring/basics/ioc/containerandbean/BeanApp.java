@@ -6,8 +6,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class BeanApp {
     public static void main(String[] args) {
-        ApplicationContext contextWithXMLConfig = new ClassPathXmlApplicationContext("ioc/basic-config.xml");
-        Person john = (Person) contextWithXMLConfig.getBean("person");
+        ApplicationContext contextWithXmlConfig = new ClassPathXmlApplicationContext("ioc/basic-config.xml");
+        Person john = (Person) contextWithXmlConfig.getBean("person");
         System.out.println(john.getFullName());
         System.out.println(john.getAddress());
 

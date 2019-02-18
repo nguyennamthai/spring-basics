@@ -2,7 +2,6 @@ package com.whizlabs.spring.basics.bean.ditype;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
 
 public class DITypeApp {
     public static void main(String[] args) {

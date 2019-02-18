@@ -6,7 +6,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class AfterThrowingApp {
     public static void main(String[] args) {
         ApplicationContext context = new AnnotationConfigApplicationContext(AfterThrowingConfig.class);
-        ExceptionThrower exceptionThrower = context.getBean(ExceptionThrower.class);
-        exceptionThrower.throwException();
+        ExceptionThrower thrower = context.getBean(ExceptionThrower.class);
+        thrower.throwException();
     }
 }

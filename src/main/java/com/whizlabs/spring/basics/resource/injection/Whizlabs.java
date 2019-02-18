@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 @Component
 public class Whizlabs {
-    private Resource resource;
+    private final Resource resource;
 
     public Whizlabs(@Value("resource/mission.txt") Resource resource) {
         this.resource = resource;

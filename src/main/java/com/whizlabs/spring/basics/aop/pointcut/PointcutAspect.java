@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class PointcutAspect {
     @Pointcut("execution(* print*())")
-    private void noParamExecutionPointcut() { }
+    private void noParamExecutionPointcut() {}
 
 //    @Before("noParamExecutionPointcut()")
 //    private void noParamExecutionAdvice() {
@@ -17,7 +17,7 @@ public class PointcutAspect {
 //    }
 
     @Pointcut("execution(public void com.whizlabs..Person.*(*))")
-    private void singleParamExecutionPointcut() { }
+    private void singleParamExecutionPointcut() {}
 
 //    @Before("singleParamExecutionPointcut()")
 //    private void singleParamExecutionAdvice() {
@@ -30,7 +30,7 @@ public class PointcutAspect {
     }
 
     @Pointcut("within(com.whizlabs.spring.basics.aop.pointcut..*) && noParamExecutionPointcut()")
-    private void withinPointcut() { }
+    private void withinPointcut() {}
 
     @Before("withinPointcut()")
     private void withinAdvice() {
@@ -38,7 +38,7 @@ public class PointcutAspect {
     }
 
     @Pointcut("target(com.whizlabs.spring.basics.aop.pointcut.service.LogService)")
-    private void targetPointcut() { }
+    private void targetPointcut() {}
 
     @Before("targetPointcut() && execution(void log(..))")
     private void targetAdvice() {

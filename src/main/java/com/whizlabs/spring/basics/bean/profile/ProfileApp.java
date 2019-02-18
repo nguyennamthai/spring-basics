@@ -8,7 +8,7 @@ public class ProfileApp {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
         context.register(ProfileConfig.class);
-        context.getEnvironment().setActiveProfiles("dev", "prod");
+        context.getEnvironment().setActiveProfiles("prod");
         context.refresh();
         Arrays.stream(context.getBeanDefinitionNames())
                 .filter(beanName -> !beanName.startsWith("org.springframework.context"))

@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Profile;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
+@Profile("dev & prod")
 @Retention(RetentionPolicy.RUNTIME)
-@Profile("dev &  prod")
 public @interface DevAndProdProfile {
 }

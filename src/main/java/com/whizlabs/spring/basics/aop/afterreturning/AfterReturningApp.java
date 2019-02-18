@@ -6,7 +6,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class AfterReturningApp {
     public static void main(String[] args) {
         ApplicationContext context = new AnnotationConfigApplicationContext(AfterReturningConfig.class);
-        NumberGenerator numberGenerator = context.getBean(NumberGenerator.class);
-        numberGenerator.generate();
+        NumberGenerator generator = context.getBean(NumberGenerator.class);
+        generator.generate();
     }
 }

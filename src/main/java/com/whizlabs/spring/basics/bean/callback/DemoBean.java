@@ -8,13 +8,13 @@ import javax.annotation.PreDestroy;
 
 public class DemoBean implements InitializingBean, DisposableBean {
     @Override
-    public void afterPropertiesSet() {
-        System.out.println("afterPropertiesSet method of InitializingBean");
+    public void destroy() throws Exception {
+        System.out.println("destroy method of DisposableBean");
     }
 
     @Override
-    public void destroy() {
-        System.out.println("destroy method of DisposableBean");
+    public void afterPropertiesSet() throws Exception {
+        System.out.println("afterPropertiesSet method of InitializingBean");
     }
 
     @PostConstruct

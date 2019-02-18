@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class BeforeAndAfterAspect {
     @Pointcut("within(com.whizlabs.spring.basics.aop.beforeandafter.Person)")
-    private void withinPerson() { }
+    private void withinPerson() {}
 
     @Before("withinPerson()")
     private void logBefore(JoinPoint joinPoint) {
